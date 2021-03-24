@@ -13,7 +13,7 @@
 			animation: nb 3s ease infinite;
 			font-family: 'Chango', cursive;
 			font-weight: bold;
-			font-size: 25px;
+			font-size: 20px;
 		//	opacity: 0.3;
 		//border: 2px solid #ff001f;
 		//border-radius: 10px;
@@ -100,15 +100,6 @@ h3
 .hero
 {
 				margin-top: 65px;
-}
-.bg-name::before
-{
-				background-color: yellow;
-}
-
-.bg-name::after
-{
-				background-color: red;
 }
 
 .fa
