@@ -47,14 +47,14 @@
 
 .bg-name
 {
-			//text-shadow: 1px 1px #fff,1px 1px #fff;	
+			text-shadow: -1px -1px #000,1px 1px #000;	
 			color: #ffff;
 			animation: nb 3s ease infinite;
 			//font-family: sans sherif;
 		font-family: 'Chango', cursive;	
 			//font-weight: bold;
 			font-size: 20px;
-			opacity: 0.5;
+			opacity: 0.95;
 		//border: 2px solid #ff001f;
 		border-radius: 10px 10px 10px 10px;
 		padding: 10px;
