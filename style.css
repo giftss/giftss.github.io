@@ -29,6 +29,8 @@
        border-radius: 30px;
        padding: 10px;
        box-shadow: 0 0 40px #fff;
+       font-weight: bold;
+       color: #fff;
 }
 
 @keyframes nb
