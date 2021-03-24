@@ -71,9 +71,11 @@
 
 .add
 {
-				background-color: white;
+    position: relative;  
+				background-color: #fff;
 				padding: 3px;
-			centercenter;
+			 display: flex;
+			 flex-direction: row;
 				justify-content: center;
 				text-align: center;
 				box-sizing: border-box;
@@ -83,6 +85,18 @@
 				border: solid 2px black;
 				margin-top: 100px;
 				background-color: #fff;
+}
+h1
+{
+				font-size: 12px;
+				color: #fff;
+				text-shadow: 3px 3px 2px #000;
+}
+h3
+{
+				font-size: 12px;
+				color: #fff;
+		  	text-shadow: 3px 3px 8px #000;	
 }
 .hero
 {
@@ -183,8 +197,8 @@
 {   position: absolute;
 				hight: 299px;
 			 width: 299px;
-				padding: 108px 30px;
-				background-color: #afff6a;
+				padding: 108px 50px;
+				background-color: #db766e;
 				border: 2px solid #333;
 				border-radius: 60px;
 				top: 2px;
@@ -197,17 +211,19 @@
 				transition: all 3s ease;
 				box-sizing: border-box;
 				box-shadow: 0 0 40px black;
+				float: right;
 }
 
 .element:hover .front img
 {
 				border-radius: 80px;
-				border: 2px solid #fff;
+				border: 1px solid #ffbfbf;
 				top: calc(50% - 50px);
 			 left: calc(100% - 50px);
 				high:30%;
 				width: 30%;
 				filter: blur(0);
+				box-shadow: 0 0 40px #ffbfbf,0 0 80px #ffbfbf;
 }
 .element .back
 {
@@ -235,8 +251,8 @@
 }
 .element1 .front img
 {   position: absolute;
-				hight: 300px;
-				width: 300px;
+				hight: 310px;
+				width: 310px;
 				border: 2px solid #000;
 				top: 0;
 				left: 0;
@@ -260,7 +276,7 @@
 				hight: 299px;
 			 width: 299px;
 				padding: 108px 29px;
-				background-color: #6affb6;
+				background-color: #fff4d5;
 				border: 2px solid #333;
 				border-radius: 60px;
 				top: 2px;
@@ -316,7 +332,7 @@
 				//transition: all 2s ease;
 				border-radius: 60px;
 				opacity: 1;
-				filter: blur(2px);
+				//filter: blur(2px);
 				transform: skewX(0deg);
 }
 .element2:hover .front img
@@ -331,7 +347,7 @@
 				hight: 299px;
 			 width: 299px;
 				padding: 108px 30px;
-				background-color: #6affb6;
+				background-color: #ffaaca;
 				border: 2px solid #333;
 				border-radius: 60px;
 				top: 2px;
@@ -391,7 +407,7 @@
 				transform-origin: left;
 				border-radius: 60px;
 				opacity: 1;
-				filter: blur(2px);
+				//filter: blur(2px);
 				transform: rotateY(0deg);
 }
 .element3:hover .front img
@@ -406,7 +422,7 @@
 				hight: 299px;
 			 width: 299px;
 				padding: 108px 30px;
-				background-color: #6affb6;
+				background-color: #ffdfaa;
 				border: 2px solid #333;
 				border-radius: 60px;
 				top: 2px;
@@ -419,6 +435,32 @@
 				//transition: all 3s ease;
 				//box-sizing: border-box;
 				box-shadow: 0 0 40px black;
+}
+
+.element3 .back-contant::before
+{
+				position: absolute;
+				content: '';
+				top: 50px;
+				bottom: 50px;
+				left: 30px;
+				right: 30px;
+				border-left: 2px solid #fff;
+				border-right: 2px solid #fff;
+				
+}
+
+.element3 .back-contant::after
+{
+				position: absolute;
+				content: '';
+				top: 30px;
+				bottom: 30px;
+				left: 50px;
+				right: 50px;
+				border-top: 2px solid #fff;
+				border-bottom: 2px solid #fff;
+				
 }
 
 .element3 .pname
@@ -475,19 +517,20 @@
 				z-index: 5;
 				background-color: black;
 				//transition: transform 0.5s ease 0s, opacity 0.5s ease 0.5s, left 0.5s ease 0.5s;
-				transition: all 1.5s ease;
+				transition: all 0.5s ease;
 				border-radius: 60px;
 				opacity: 1;
-				filter: blur(2px);
+				//filter: blur(2px);
 				transform: scale(1);
 				top: calc(0);
 }
 .element4:hover .front img
 {
 				transform: scale(0.4);
-				top: calc(80px);
+				top: calc(60px);
 				//left: -200%;
 				//opacity: 0;
+				box-shadow: 0 0 0 5px #f4ffaa,0 0 0 10px #ff7455,0 0 80px 0 #000;
 }
 
 .element4 .back-content
@@ -495,7 +538,7 @@
 				hight: 299px;
 			 width: 299px;
 				padding: 108px 30px;
-				background-color: #6affb6;
+				background-color: #95ffcc;
 				border: 2px solid #333;
 				border-radius: 60px;
 				top: 2px;
@@ -506,7 +549,7 @@
 				text-align: center;
 				//transform: scale(0);
 				//transition: all 3s ease;
-				//box-sizing: border-box;
+				box-sizing: border-box;
 				box-shadow: 0 0 40px black;
 }
 
