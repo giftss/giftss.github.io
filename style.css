@@ -51,7 +51,7 @@
 			color: #ffff;
 			animation: nb 3s ease infinite;
 			//font-family: sans sherif;
-		font-family: 'Chango', cursive;	
+		font-family: cursive;	
 			//font-weight: bold;
 			font-size: 20px;
 			opacity: 0.5;
@@ -60,7 +60,7 @@
 		//padding: 5px;
 		//letter-spacing: 20px;
 		overflow: hidden;
-		//box-shadow: 0 0 10px #000,0 0 20px #000,0 0 40px #000;
+		box-shadow: 0 0 10px #000,0 0 20px #000,0 0 40px #000;
 			
 }
 #mm
