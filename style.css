@@ -11,10 +11,9 @@
 			text-shadow: 2px 3px 5px #000;	
 			color: #e1e1e1;
 			animation: nb 3s ease infinite;
-			//font-family: sans sherif;
 			font-family: 'Chango', cursive;
 			font-weight: bold;
-			font-size: 30px;
+			font-size: 25px;
 		//	opacity: 0.3;
 		//border: 2px solid #ff001f;
 		//border-radius: 10px;
@@ -89,13 +88,13 @@
 h1
 {
 				font-size: 12px;
-				color: #fff;
-				text-shadow: 3px 3px 2px #000;
+				color: #222;
+				text-shadow: 3px 3px 8px #000;
 }
 h3
 {
 				font-size: 12px;
-				color: #fff;
+				color: #222;
 		  	text-shadow: 3px 3px 8px #000;	
 }
 .hero
