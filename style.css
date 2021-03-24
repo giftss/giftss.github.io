@@ -89,13 +89,13 @@
 h1
 {
 				font-size: 12px;
-				color: #fff;
-				text-shadow: 3px 3px 2px #000;
+				color: #333;
+				text-shadow: 3px 3px 8px #000;
 }
 h3
 {
 				font-size: 12px;
-				color: #fff;
+				color: #333;
 		  	text-shadow: 3px 3px 8px #000;	
 }
 .hero
