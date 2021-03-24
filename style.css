@@ -23,6 +23,13 @@
 		border-bottom: 1px solid #fff;
 			
 }
+.info
+{
+       border: 2px solid#fff;
+       border-radius: 30px;
+       padding: 10px;
+       box-shadow: 0 0 40px #fff;
+}
 
 @keyframes nb
 {
