@@ -51,14 +51,14 @@
 			color: #ffff;
 			animation: nb 3s ease infinite;
 			//font-family: sans sherif;
-		font-family: cursive;	
+		font-family: 'Chango', cursive;	
 			//font-weight: bold;
 			font-size: 20px;
 			opacity: 0.5;
 		//border: 2px solid #ff001f;
-		//border-radius: 10px 10px 10px 10px;
-		//padding: 5px;
-		//letter-spacing: 20px;
+		border-radius: 10px 10px 10px 10px;
+		padding: 10px;
+		letter-spacing: 30px;
 		overflow: hidden;
 		box-shadow: 0 0 10px #000,0 0 20px #000,0 0 40px #000;
 			
@@ -89,14 +89,14 @@
 h1
 {
 				font-size: 12px;
-				color: #333;
-				text-shadow: 3px 3px 2px #fff;
+				color: #fff;
+				text-shadow: 3px 3px 2px #000;
 }
 h3
 {
 				font-size: 12px;
-				color: #333;
-		  	text-shadow: 3px 3px 8px #fff;	
+				color: #fff;
+		  	text-shadow: 3px 3px 8px #000;	
 }
 .hero
 {
