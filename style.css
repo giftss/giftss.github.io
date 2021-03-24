@@ -68,6 +68,22 @@
 				color: white;
 				font-size: 15px;
 }
+
+.add
+{
+				background-color: white;
+				padding: 3px;
+			centercenter;
+				justify-content: center;
+				text-align: center;
+				box-sizing: border-box;
+}
+.add-to-btn
+{
+				border: solid 2px black;
+				margin-top: 100px;
+				background-color: #fff;
+}
 .hero
 {
 				margin-top: 65px;
