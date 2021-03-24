@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
 				<title>Page title</title>
 				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 				<link rel="stylesheet" href="style.css"></link>
+                <link rel="manifest" href="manifest.json">
 </head>
 <body>
 				<!-- header -->
@@ -12,9 +14,13 @@
 								<nav id="ha" class="navbar fixed-top navbar-expand-lg navbar-light" style="background: linear-gradient(45deg,#ff6a7f,#ff6a7f,#c46aff)"> <div class="container-fluid"> <a class="navbar-brand" href="#"><h3 class="bg-name">Anam Rahman </h3></a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> <div id="mm" class="navbar-nav"> <hr> <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i>Home</a> <a class="nav-link" href="https://instagram.com/a.n.a.m1?igshid=qvik7xtvd2cm"><i class="fa fa-instagram"></i>Instagram</a> <a class="nav-link" href="#"><i class="fa fa-facebook"></i>Facebook</a></div> </div> </div> </nav>
 				</header>
 				
+                <div class="add">
+								<button class="add-to-btn">Add to homescreen</button>
+				</div>
+				
 				<!-- hero area -->
 				<div class="hero">
-							<video src="1.mp4" autoplay="autoplay" loop="" width="100%" controls=""></video>	
+							<video src="1.mp4" autoplay loop width="100%"></video>	
 				</div>
 			<div class="pb">
 							<!-- 1 -->
@@ -112,6 +118,54 @@
 					</div>
 				
 				</div>
+				
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+ <script type="text/javascript">
+ 				if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+
+// Initialize deferredPrompt for use later to show browser install prompt.
+let deferredPrompt;
+var div = document.querySelector('.add');
+var button = document.querySelector('.add-to-btn');
+div.style.display = 'none';
+
+
+window.addEventListener('beforeinstallprompt', (e) => {
+// Prevent the mini-infobar from appearing on mobile
+e.preventDefault();
+// Stash the event so it can be triggered later.
+deferredPrompt = e;
+div.style.display = 'block';
+
+  
+button.addEventListener('click', async () => {
+// Hide the app provided install promotion
+div.style.display = 'none';
+// Show the install prompt
+deferredPrompt.prompt();
+// Wait for the user to respond to the prompt
+const { outcome } = await deferredPrompt.userChoice
+ .then((choiceRuselt) => {
+ if(choiceResult.outcame === 'accepted') {
+ console.log('User Accepted');
+ }
+ else{ console.log('User Dismissed');
+ }
+deferredPrompt = null;
+   });
+});
+});
+</script>
 </body>
 </html>
