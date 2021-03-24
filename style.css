@@ -11,14 +11,15 @@
 			text-shadow: 2px 3px 5px #000;	
 			color: #e1e1e1;
 			animation: nb 3s ease infinite;
+			//font-family: sans sherif;
 			font-family: 'Chango', cursive;
 			font-weight: bold;
-			font-size: 25px;
+			font-size: 30px;
 		//	opacity: 0.3;
 		//border: 2px solid #ff001f;
 		//border-radius: 10px;
 		padding: 5px;
-		//letter-spacing: 3px;
+		letter-spacing: 3px;
 		border-bottom: 1px solid #fff;
 			
 }
@@ -52,14 +53,14 @@
 			//font-family: sans sherif;
 		font-family: 'Chango', cursive;	
 			//font-weight: bold;
-			font-size: 25px;
+			font-size: 20px;
 			opacity: 0.5;
 		//border: 2px solid #ff001f;
-		border-radius: 10px 10px 10px 10px;
-		padding: 5px;
-		letter-spacing: 8px;
+		//border-radius: 10px 10px 10px 10px;
+		//padding: 5px;
+		//letter-spacing: 20px;
 		overflow: hidden;
-		box-shadow: 0 0 10px #000,0 0 20px #000,0 0 40px #000;
+		//box-shadow: 0 0 10px #000,0 0 20px #000,0 0 40px #000;
 			
 }
 #mm
@@ -88,18 +89,27 @@
 h1
 {
 				font-size: 12px;
-				color: #222;
-				text-shadow: 3px 3px 8px #000;
+				color: #333;
+				text-shadow: 3px 3px 2px #fff;
 }
 h3
 {
 				font-size: 12px;
-				color: #222;
-		  	text-shadow: 3px 3px 8px #000;	
+				color: #333;
+		  	text-shadow: 3px 3px 8px #fff;	
 }
 .hero
 {
 				margin-top: 65px;
+}
+.bg-name::before
+{
+				background-color: yellow;
+}
+
+.bg-name::after
+{
+				background-color: red;
 }
 
 .fa
